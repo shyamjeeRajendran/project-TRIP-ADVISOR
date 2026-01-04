@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title & Favicon -->
+    <title>
+      Tripadvisor: Over a billion reviews & contributions for Hotels,
+      Attractions, Restaurants, and more
+    </title>
+    <link rel="icon" type="icon/x-image" href="/img/fav-icon.ico" />
+    <!-- External css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <div class="nav-bar">
+      <div class="nav-bar--menu">
+        <i class="fa-solid fa-bars" style="color: #003011"></i>
+      </div>
+      <div class="nav-bar--namecard">
+        <img src="/img/weblogo.svg" alt="weblogo" />
+      </div>
+      <div class="nav-bar--review">
+        <h3>Discover</h3>
+        <h3>Review</h3>
+        <h3>More</h3>
+      </div>
+      <div class="nav-bar--signin">
+        <svg
+          viewBox="0 0 24 24"
+          width="24px"
+          height="24px"
+          class="d Vb UmNoP"
+          aria-hidden="true"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.31 9.82h4.178c-.069-1.591-.356-2.993-.766-4.017-.237-.593-.501-1.023-.756-1.293-.211-.223-.38-.3-.5-.32h-.133c-.12.02-.289.097-.5.32-.255.27-.519.7-.756 1.293-.41 1.024-.697 2.426-.767 4.017m-.374-5.14q-.135.272-.252.566C8.194 6.472 7.88 8.07 7.81 9.82H5.055a6.39 6.39 0 0 1 3.88-5.14m2.301-1.989a7.883 7.883 0 0 0-7.726 7.88 7.88 7.88 0 0 0 7.884 7.885c.584 0 .871-.014 1.11-.074.124-.031.172-.049.213-.064.058-.02.099-.036.312-.073l-.26-1.477a4 4 0 0 0-.628.159c-.031.007-.132.029-.743.029-.121 0-.313-.06-.566-.327-.255-.27-.519-.699-.756-1.292-.41-1.025-.697-2.426-.767-4.017h4.203a4.7 4.7 0 0 1-.113.843 6 6 0 0 1-.112.413l-.012.04-.004.016c-.034.114-.089.298-.1.478l1.498.088v.006s.007-.035.044-.161l.012-.04c.038-.126.09-.298.136-.505.072-.313.134-.698.152-1.178h2.734a4.2 4.2 0 0 1-.195.949c-.055.16-.11.28-.166.403l-.004.01-.01.02c-.046.101-.132.288-.161.486l1.484.219-.005.026s.012-.032.057-.13l.008-.018c.056-.123.137-.3.216-.529.168-.49.31-1.168.31-2.186a7.88 7.88 0 0 0-7.72-7.879 2 2 0 0 0-.325 0m2.626 1.99q.134.271.252.565c.49 1.226.805 2.824.875 4.574h2.75a6.38 6.38 0 0 0-3.877-5.14M8.94 16.466a8 8 0 0 1-.256-.573c-.49-1.227-.805-2.824-.875-4.574H5.055a6.39 6.39 0 0 0 3.885 5.147"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M20.489 12.343h-8.75v6.648h5.255l3.495 2.325zm-1.5 1.5v4.674l-1.542-1.026H13.24v-3.648z"
+          ></path>
+        </svg>
+        <div class="nav-bar__signin-part1"></div>
+        <p>INR</p>
+        <p class="nav-bar__signin-part3">Sign in</p>
+      </div>
+      <div class="nav-bar--glass">
+        <i
+          class="fa-solid fa-magnifying-glass fa-lg"
+          style="color: #003011"
+        ></i>
+      </div>
+    </div>
+    <header>
+      <div class="sec2">
+        <div class="description">
+          <h1>Where to?</h1>
+        </div>
+      </div>
+      <div class="option">
+        <div class="option__item">
+          <p>
+            <i class="fa-regular fa-house" style="color: #002b11"></i> Search
+            All
+          </p>
+        </div>
+        <div class="item">
+          <p><i class="fa-solid fa-bed" style="color: #002b11"></i> Hotels</p>
+        </div>
+        <div class="item">
+          <p>
+            <i class="fa-regular fa-camera" style="color: #002b11"></i>
+            Things to Do
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            <i class="fa-solid fa-utensils" style="color: #002b11"></i>
+            Restaurants
+          </p>
+        </div>
+      </div>
+      <div class="search">
+        <p class="search1">
+          <i
+            class="fa-solid fa-magnifying-glass fa-xl"
+            style="color: #002b11"
+          ></i>
+          <input
+            type="text"
+            placeholder="  Place to go,things to do..."
+            style="border: none; width: 85%; font-size: 1.2rem"
+          />
+        </p>
+        <p class="search2">search</p>
+      </div>
+    </header>
+    <main>
+      <div class="booknow">
+        <div class="booknow__img">
+          <img src="/img/trip2.jpg" alt="link broken" />
+          <h4>@shyamjee</h4>
+        </div>
+        <div class="booknow__line"></div>
+        <div class="booknow__link">
+          <h1>Find things to do for everything you're into</h1>
+          <p>Browse 400,000+ experiences and book with us</p>
+          <h3>Book now</h3>
+          <i
+            class="fa-regular fa-circle-pause fa-lg"
+            style="color: #003021"
+          ></i>
+        </div>
+        <div class="booknow__link--mob">
+          <h1>Book experiences on the go</h1>
+          <h3>Get the app</h3>
+        </div>
+      </div>
+      <!-- Interest -->
+      <div class="interest">
+        <div class="interest__description">
+          <h2>Find things to do by interest</h2>
+          <p>Whatever you're into, we’ve got it</p>
+        </div>
+        <div class="interest__content">
+          <div class="interest__content--list">
+            <img src="/img/interest1.jpg" alt="link broken" />
+            <h1>Outdoors</h1>
+          </div>
+          <div class="interest__content--list">
+            <img src="/img/interest2.jpg" alt="link broken" />
+            <h1>Food</h1>
+          </div>
+          <div class="interest__content--list">
+            <img src="/img/interest3.jpg" alt="link broken" />
+            <h1>Culture</h1>
+          </div>
+          <div class="interest__content--list">
+            <img src="/img/interest4.jpg" alt="link broken" />
+            <h1>Water</h1>
+          </div>
+        </div>
+      </div>
+      <div class="interest2">
+        <div class="interest2__list--img">
+          <img src="/img/interest5.jpg" alt="link broken" />
+        </div>
+        <div class="interest2__list--descr">
+          <p class="interest2__list--descr--p1">sponsored by Pigeon Forge</p>
+          <h3>Discover Pigeon Forge</h3>
+          <p>Find out why travellers like you are raving about Pigeon Forge</p>
+        </div>
+        <div class="interest2__list--submit"><h4>Explore now</h4></div>
+      </div>
+      <!-- LISTING SECTION1 -->
+      <div class="listing__s1">
+        <div class="listing__s1--descard">
+          <h2 class="listing__s1--des">You might like these</h2>
+          <p class="listing__s1--des">More things to do in Bangkok</p>
+        </div>
+        <div class="container">
+          <div class="container__card">
+            <img src="/img/slideimg1-s1.jpg" alt="img" />
+            <p>
+              <b
+                >Bangkok City Highlights Tour: Grand Palace & Three Iconic
+                Temples</b
+              >
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(2,254)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg2-s1.jpg" alt="img" />
+            <p><b>Bangkok Midnight Food Tuk Tuk Tour</b></p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(467)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg3-s1.jpg" alt="img" />
+            <p>
+              <b
+                >Amesterdam Light Festival Canal Cruise With Unlimited Drinks</b
+              >
+            </p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(1,967)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg4-s1.jpg" alt="img" />
+            <p>
+              <b
+                >Bangkok City Highlight Tour:Grand Palace & Three Iconic
+                Temples</b
+              >
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(228)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg5-s1.jpg" alt="img" />
+            <p>
+              <b
+                >Half-Day Railway Market and Floating Market Tour in Thailand</b
+              >
+            </p>
+            <p>4.8<b style="color: #269651"> ● ● ● ● ● </b>(3,787)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg6-s1.jpg" alt="img" />
+            <p><b>Bangkok by Night:Temples,Markets and Food Tuk Tuk Tour</b></p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(689)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <!-- LISTING SECTION2 -->
+      <div class="listing__s2">
+        <div class="listing__s2--descard">
+          <h2 class="listing__s2--des">
+            Explore experiences near Chennai (Madras)
+          </h2>
+          <p class="listing__s2--des">Can’t-miss picks near you</p>
+        </div>
+        <div class="container">
+          <div class="container__card">
+            <img src="/img/slideimg1-s2.jpg" alt="img" />
+            <p>
+              <b>Mahabalipuram tour by Tourism Ministry approved company</b>
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(2,254)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg2-s2.jpg" alt="img" />
+            <p>
+              <b
+                >Chennai Market Tour & Cooking Class in a Local Home with
+                Meena</b
+              >
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(467)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg3-s2.jpg" alt="img" />
+            <p>
+              <b
+                >Total Chennai city tour in Private car with guide & lunch by
+                Wonder tours</b
+              >
+            </p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(1,967)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg4-s2.jpg" alt="img" />
+            <p>
+              <b
+                >Chennai, Guided Birding And Birding Photo Trip With Spot Scope,
+                2 to 3 Hours</b
+              >
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(228)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg5-s2.jpg" alt="img" />
+            <p>
+              <b
+                >British Architecture Walk, an immersive walking tour in
+                Chennai</b
+              >
+            </p>
+            <p>4.8<b style="color: #269651"> ● ● ● ● ● </b>(3,787)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg6-s2.jpg" alt="img" />
+            <p><b>Pondicherry day trip from Chennai by Wonder tours</b></p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(689)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg7-s2.jpg" alt="img" />
+            <p>
+              <b
+                >Georgetown heritage walking tour in Chennai about the founding
+                of Chennai</b
+              >
+            </p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(689)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container__card">
+            <img src="/img/slideimg8-s2.jpg" alt="img" />
+            <p>
+              <b>Sowcarpet Street Food Walking Tour in Chennai with guide</b>
+            </p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(689)</p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <!-- DONATION-TAB -->
+      <div class="donation">
+        <div class="donation__img">
+          <img src="/img/donate-img.jpg" alt="link broken" />
+        </div>
+        <div class="donation__content">
+          <p
+            class="donation__heading"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <img src="/img/tripadvisor-icon.webp" width="30" height="30" />
+            Tripadvisor Foundation
+          </p>
+          <h1 class="donation__ des" style="font-size: 35px">
+            Show some love to small businesses
+          </h1>
+          <p class="donation__ des">
+            Donate to Kiva.org today to provide loans to local entrepreneurs and
+            the Tripadvisor Foundation will match it, up to $150,000 USD
+            collectively. Terms apply.
+          </p>
+          <button class="donation__ des"><h3>Donate now</h3></button>
+        </div>
+      </div>
+      <!-- ADV CARD -->
+      <div class="adv__card">
+        <div class="adv__card--img">
+          <img src="/img/adv-card-img.jpg" alt="link broken" />
+        </div>
+        <div class="adv__card--descr">
+          <h2>Plan your trip your way</h2>
+          <p>Save your faves and more with Trips.</p>
+        </div>
+        <div class="adv__card--submit"><h4>Get started</h4></div>
+      </div>
+      <!-- LISITING-SECTION3 -->
+      <div class="listing__s3">
+        <div class="listing__s3--descard">
+          <h2 class="listing__s3--des">Big cities, big holiday cheer</h2>
+          <p class="listing__s3--des">Eat, drink, shop, and be merry</p>
+        </div>
+        <div class="container-s3">
+          <div class="container-s3__card">
+            <img src="/img/slideimg1-s3.jpg" alt="img" />
+            <button class="container__s3--click">Vienna</button>
+            <p>
+              <b
+                >Christmas and New Year Concert at St. Peter’s Church in
+                Vienna</b
+              >
+            </p>
+            <p>4.6<b style="color: #269651"> ● ● ● ● ◐ </b>(51)</p>
+            <p><b>from ₹5,299 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg2-s3.jpg" alt="img" />
+            <button class="container__s3--click">Rovaniemi</button>
+            <p>
+              <b>Meet Santa Claus & Santa's Reindeer Ride & Greet Huskies</b>
+            </p>
+            <p>5<b style="color: #269651"> ● ● ● ● ● </b>(70)</p>
+            <p><b>from ₹21,313 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg3-s3.jpg" alt="img" />
+            <button class="container__s3--click">Lisbon</button>
+            <p>
+              <b
+                >Lisbon: Fireworks, Music and Open Bar in New Year's Eve
+                Cruise</b
+              >
+            </p>
+            <p>4.9<b style="color: #269651"> ● ● ● ● ● </b>(1,96)</p>
+            <p><b>from ₹16,220 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg4-s3.jpg" alt="img" />
+            <button class="container__s3--click">London</button>
+            <p>
+              <b
+                >London by Night Bus Tour with Christmas Lights and Live
+                Guide</b
+              >
+            </p>
+            <p>4.6<b style="color: #269651"> ● ● ● ● ◐ </b>(1,751)</p>
+            <p><b>from ₹3,718 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg5-s3.jpg" alt="img" />
+            <button class="container__s3--click">Rome</button>
+            <p>
+              <b>Celebrate Christmas in Rome - Small Group Walking Tour</b>
+            </p>
+            <p>4.6<b style="color: #269651"> ● ● ● ● ◐ </b>(13)</p>
+            <p><b>from ₹6,054 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg6-s3.jpg" alt="img" />
+            <button class="container__s3--click">San Fransisco</button>
+            <p><b>Holiday Lights Tour of San Francisco</b></p>
+            <p>4.6<b style="color: #269651"> ● ● ● ● ◐ </b>(9)</p>
+            <p><b>from ₹7,830 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg7-s3.jpg" alt="img" />
+            <button class="container__s3--click">Amsterdam</button>
+            <p>
+              <b>Amsterdam Light Festival Canal Cruise With Unlimited Drinks</b>
+            </p>
+            <p>4.4<b style="color: #269651"> ● ● ● ● ◐ </b>(266)</p>
+            <p><b>from ₹5,066 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+          <div class="container-s3__card">
+            <img src="/img/slideimg8-s3.jpg" alt="img" />
+            <button class="container__s3--click">New York</button>
+            <p>
+              <b>Dyker Heights Brooklyn Christmas Lights Tour</b>
+            </p>
+            <p>4.5<b style="color: #269651"> ● ● ● ● ◐ </b>(467)</p>
+            <p><b>from ₹3,439 per adult</b></p>
+            <i class="fa-brands fa-gratipay fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <!-- ICONIC PLACES -->
+      <div class="interest3">
+        <div class="interest3__description">
+          <h2 style="padding-left: 20px">Iconic places you need to see</h2>
+        </div>
+        <div class="interest3__content">
+          <div class="interest3__content--list">
+            <img src="/img/slideimg1-s4.jpg" alt="link broken" />
+            <h1>Rome,Italy</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg2-s4.jpg" alt="link broken" />
+            <h1>Paris,France</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg3-s4.jpg" alt="link broken" />
+            <h1>Las Vegas,NV</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg4-s4.jpg" alt="link broken" />
+            <h1>Reykjavik</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg5-s4.jpg" alt="link broken" />
+            <h1>London,UK</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg6-s4.jpg" alt="link broken" />
+            <h1>Italy</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg7-s4.jpg" alt="link broken" />
+            <h1>Newyork City</h1>
+          </div>
+          <div class="interest3__content--list">
+            <img src="/img/slideimg8-s4.jpg" alt="link broken" />
+            <h1>Barcelona</h1>
+          </div>
+        </div>
+      </div>
+      <!-- AWARD WINNINGS -->
+      <div class="awards">
+        <div class="awards__img">
+          <img src="/img/wanderlab.jpg" alt="link broken" />
+        </div>
+        <div class="awards__content">
+          <p style="display: flex; align-items: center; gap: 10px">
+            <img src="/img/tripadvisor-icon.webp" width="30" height="30" />
+            Sponsored by<b><ins>Wanderlab</ins></b>
+          </p>
+          <h1 style="font-size: 35px">Watch The Wanderer</h1>
+          <p>
+            Tripadvisor’s award-winning travel series, now streaming on Amazon
+            Prime Video
+          </p>
+          <button><h3>Learn more</h3></button>
+        </div>
+      </div>
+      <!-- adv2-card -->
+      <div class="adv2">
+        <div class="adv2__content">
+          <img src="/img/adv2-logo.svg" alt="link broken" />
+          <h1>Travellers'</h1>
+          <h1>Choice</h1>
+          <h1>Awards Best</h1>
+          <h1>of the Best</h1>
+          <h3>
+            Among our top 1% of places, stays, eats, and experiences—decided by
+            you.
+          </h3>
+          <b>See the winners</b>
+        </div>
+        <div class="adv2__img">
+          <img src="/img/adv2-card.png" alt="link broken" />
+        </div>
+      </div>
+      <!-- COLLECTIONS -->
+      <div class="collection">
+        <div class="collection__des">
+          <h1
+            style="
+              text-align: start;
+              padding-left: 10px;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+          >
+            <ins>Browse themed collections</ins>
+          </h1>
+        </div>
+        <div class="collection__content">
+          <div class="collection__content--list">
+            <img src="/img/slideimg1-s5.jpg" alt="link broken" />
+            <h1>Winter in Maui</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg2-s5.jpg" alt="link broken" />
+            <h1>mix it up after dark</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg3-s5.jpg" alt="link broken" />
+            <h1>Art and Culture for days</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg4-s5.jpg" alt="link broken" />
+            <h1>If you're feeling facy ish</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg5-s5.jpg" alt="link broken" />
+            <h1>Pages from the Past</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg6-s5.jpg" alt="link broken" />
+            <h1>Calling all sea food lovers</h1>
+          </div>
+          <div class="collection__content--list">
+            <img src="/img/slideimg7-s5.jpg" alt="link broken" />
+            <h1>Take it outside</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-sec1">
+        <div class="list">
+          <h4>About Tripadvisor</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Press</li>
+            <li>Resources & Policies</li>
+            <li>Careers</li>
+            <li>Trust & Safety</li>
+            <li>Contact Us</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>Explore</h4>
+          <ul>
+            <li>Write a Review</li>
+            <li>Add a Place</li>
+            <li>Join</li>
+            <li>Traveller's Choice</li>
+            <li>Help Center</li>
+            <li>Travel Stories</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>Do Business With Us</h4>
+          <ul>
+            <li>Owners & DMO/CVB</li>
+            <li>Business Advantage</li>
+            <li>Sponsored Placements</li>
+            <li>Advertise With Us</li>
+            <li>Access Our Content API</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>Get The App</h4>
+          <ul>
+            <li>iphone App</li>
+            <li>Android App</li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>Tripadvisor Sites</h4>
+          <p>Book tours & attaraction tickets on <ins>Viator</ins></p>
+        </div>
+      </div>
+      <div class="foot-sec2">
+        <div class="foot-sec2__des">
+          <p style="color: gray">
+            <img
+              src="/img/tripadvisor-icon.webp"
+              alt="link broken"
+              width="60"
+              height="60"
+            />
+            &copy;2026 Tripadvisor LLc All rights reserved
+          </p>
+          <p>
+            <b
+              ><ins>Terms of Use</ins>&nbsp; &nbsp;<ins>Privacy & Cookies</ins
+              >&nbsp; &nbsp;<ins>Cookie Consent</ins>&nbsp; &nbsp;<ins
+                >Site Map</ins
+              >&nbsp; &nbsp;<ins>Contact Us</ins>&nbsp; &nbsp;<ins
+                >Accessibility Statement</ins
+              ></b
+            >
+          </p>
+          <p style="color: gray" class="foot-sec2__des--para">
+            This is the version of our website addressed to speakers of English
+            in India. If you are a resident of another country or region, please
+            select the appropriate version of Tripadvisor for your country or
+            region in the drop-down menu. Tripadvisor LLC makes no guarantees
+            for availability of prices advertised on our sites and applications.
+          </p>
+        </div>
+        <div class="foot-sec2__search">
+          <p><b>₹ INR</b></p>
+          <p><b>India</b></p>
+          <div class="logo">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #003011"></i>
+            <i class="fa-brands fa-x-twitter fa-2xl" style="color: #003011"></i>
+            <i class="fa-brands fa-pinterest fa-2xl" style="color: #003011"></i>
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #003011"></i>
+            <i class="fa-brands fa-youtube fa-2xl" style="color: #003011"></i>
+            <i class="fa-brands fa-tiktok fa-2xl" style="color: #003011"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p class="body__chatbot" style="z-index: 1000">
+      <svg
+        viewBox="0 0 24 24"
+        width="24px"
+        height="24px"
+        class="d Vb UmNoP"
+        aria-hidden="true"
+      >
+        <path
+          d="M16.895 3A4.86 4.86 0 0 0 21 7.105a4.86 4.86 0 0 0-4.105 4.106 4.86 4.86 0 0 0-4.105-4.106A4.86 4.86 0 0 0 16.895 3M9.947 7.105a8.22 8.22 0 0 0 6.947 6.947A8.22 8.22 0 0 0 9.947 21 8.22 8.22 0 0 0 3 14.052a8.22 8.22 0 0 0 6.947-6.947"
+        ></path>
+      </svg>
+      <b>Ask shyam</b>
+    </p>
+  </body>
+</html>
