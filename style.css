@@ -953,19 +953,6 @@ body {
     margin-bottom:-5px;
 }
 
-    .adv2__content b{
-    margin-top:-80px;
-    padding:25px;
-    border-radius:40px;
-    background-color: white;
-    color: #002B11;
-}
-
-    .adv2__content b:hover{
-    cursor: pointer;
-    transform: scale(0.9);
-}
-
     .adv2__img{
     height:700px;
     width:1000px;
@@ -1186,4 +1173,5 @@ body {
 
 
     
+
 
